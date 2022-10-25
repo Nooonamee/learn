@@ -1,5 +1,5 @@
    .menu{
-    padding: 0 20px 0 20px; 
+    padding: 0; 
     width: 25vw;
     height: 100vh;
     position: fixed;
@@ -12,22 +12,25 @@
     height: 100%;
     width: 100%;
     list-style: none;
+
   }
   nav ul li{
    line-height: 60px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
   }
   nav ul li:last-child{
     border-bottom: 1px solid rgba(255,255,255,0.09);
   }
   nav ul li a{
+    padding: 0 0 0 20px ;
     position: relative;
     color: white;
     text-decoration: none;
     font-size: 17px;
     font-weight: 400;
     display: block;
-    width: 100%;
+    width: 94%;
     border-left: 2px solid transparent;
   }
   
@@ -37,9 +40,6 @@
   nav ul ul{
     position: static;
     display: none;
-  }
-  nav ul .mot-show.showMenu{
-    display: block;
   }
 
   nav ul ul li{
