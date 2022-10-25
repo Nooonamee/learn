@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Trang chủ quản trị</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="../Template/Backend/assets/css/stylehome.css"> 
+    <link rel="stylesheet" href="../Template/Backend/assets/css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/> 
+
+
+	
+</head>
+<body >
+    <div class="container">
+        <div class="menu">
+            
+            <nav class="sidebar">
+                <ul>
+                   <li>
+                      <a href="#" class="">
+                        <i class="fas fa-user-friends"></i>
+                      Bạn bè
+                      </a>  
+                   </li>
+                   <li>
+                        <a href="#" class="">
+                        <i class="fas fa-users"></i>
+                        Nhóm
+                      </a> 
+                   </li>
+                   <li>
+                        <a href="#" class="">
+                            <i class="fas fa-history"></i>
+                            Kỷ niệm
+                        </a>  
+                    </li>
+                    <li>
+                        <a href="#" class="">
+                            <i class="fas fa-tv"></i>
+                        Watch
+                        </a>  
+                     </li>
+                     <li class="sidebar-hide xemthem">
+                        <a href="#">
+                            <i class="fas fa-chevron-circle-down"></i>
+                            Xem thêm
+                        </a>  
+                     </li>
+                     <li class="sidebar-hide hide">
+                        <a href="#" class="feat-btn">
+                            <i class="fab fa-facebook-messenger"></i>
+                        Messenger
+                        </a>  
+                     </li>
+                     <li class="sidebar-hide hide">
+                        <a href="#" class="feat-btn">
+                            <i class="fas fa-flag"></i>
+                        Trang
+                        </a>  
+                     </li>
+                     <li class="sidebar-hide hide">
+                        <a href="#" class="feat-btn">
+                            <i class="fas fa-video-plus"></i>
+                        Trực tiếp
+                        </a>  
+                     </li>
+                     <li class="sidebar-hide hide anbot">
+                        <a href="#">
+                            <i class="fas fa-chevron-circle-down"></i>
+                            Ẩn bớt
+                        </a>  
+                     </li>
+                </ul>
+             </nav>  
+        </div>
+    </div>
+    
+	<script>
+	    let arrow1 = document.querySelector(".xemthem");
+        let arrow2 = document.querySelector(".anbot");
+
+        // lấy các sidebar bị ẩn
+        sidebar_hides = document.querySelectorAll(".sidebar-hide");
+	    arrow1.addEventListener("click", (e)=>{
+            // sau khi click thì xóa class hide
+            for (var i = 0; i < sidebar_hides.length; i++) {
+                sidebar_hides[i].classList.remove("hide");
+            }
+	        arrow1.classList.add("hide");
+	    });
+        arrow2.addEventListener("click", (e)=>{
+            // sau khi click thì thêm class hide
+            for (var i = 0; i < sidebar_hides.length; i++) {
+                sidebar_hides[i].classList.add("hide");
+            }
+	        arrow1.classList.remove("hide");
+	    });
+	</script>
+		
+</body>
+</html>
